@@ -1,7 +1,7 @@
 require "./lib/mongo"
 
 Gem::Specification.new do |s|
-  s.name = 'mongo'
+  s.name = 'jonbell-mongo'
 
   s.version = Mongo::VERSION
 

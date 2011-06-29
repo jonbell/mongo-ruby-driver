@@ -227,7 +227,7 @@ module Mongo
         config = self['admin'].command({:ismaster => 1}, :socket => socket)
 
         check_set_name(config, socket)
-      rescue OperationFailure, SocketError, SystemCallError, IOError => ex
+      rescue OperationFailure, SocketError, SystemCallError, IOError, OperationTimeout => ex
         # It's necessary to rescue here. The #connect method will keep trying
         # until it has no more nodes to try and raise a ConnectionFailure if
         # it can't connect to a primary.

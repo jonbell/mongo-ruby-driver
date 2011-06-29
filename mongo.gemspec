@@ -3,7 +3,7 @@ require "./lib/mongo"
 Gem::Specification.new do |s|
   s.name = 'jonbell-mongo'
 
-  s.version = Mongo::VERSION + ".1"
+  s.version = Mongo::VERSION + ".2"
 
   s.platform = Gem::Platform::RUBY
   s.summary = 'Ruby driver for the MongoDB'
